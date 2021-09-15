@@ -1,0 +1,24 @@
+POST http://localhost:4000/api/posts
+Content-Type: application/json
+
+{
+    "title": "post two",
+    "description": "description of post two"
+}
+
+###
+GET http://localhost:4000/api/posts
+
+###
+GET http://localhost:4000/api/posts/6141ec73a0817acb5f4462f4
+
+###
+DELETE http://localhost:4000/api/posts/6141ec73a0817acb5f4462f4
+
+###
+PATCH http://localhost:4000/api/posts/6141ec17a0817acb5f4462f1
+Content-Type: application/json
+
+{
+    "description": "this is the new description of post one"
+}
