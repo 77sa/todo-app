@@ -32,7 +32,7 @@ const Posts = () => {
         return (
           <div key={post._id}>
             <h1>{post.title}</h1>
-            <span>{post.data}</span>
+            <span>{post.data.split("T")[0]}</span>
             <p>{post.description}</p>
             <div>
               {showUpdate && <UpdateForm id={post._id} />}
